@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+
+    <script src="index.js"> </script>    
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }        
+
+        body {
+            /*background-image: url("https://blog.kakaocdn.net/dn/eUInSV/btqRoRMCxw7/HzTsLtKtAsTtshO4fPuky1/img.jpg");*/
+            background-color: black;
+            background-position: center;
+
+            color: white;
+        }
+
+        .main {
+            width: 100vw; /* 100vw = 화면을 가득 사용하겠다는 뜻 */
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 이 네가지는 블럭을 중간으로 정렬하겠다는 뜻임 4개가 한 세트처럼 움직임*/
+        }
+
+
+        .time {
+            font-size: 200px;
+            font-weight: bold;
+        }
+
+        .greeting {
+            font-size: 50px;
+        }
+
+        .todo {
+            font-size: 20px;
+        }
+
+        .quote {
+            width: 100vw; /* 100vw = 화면을 가득 사용하겠다는 뜻 */
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+
+        }
+
+        .author{
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .content {
+            font-size: 30px;
+            
+        }
+
+
+
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="main"> 
+        <div id="time" class="time">  </div>
+        <div class="greeting"> HELLO, PAK! </div> 
+        <div class="todo"> Reading BOOK! </div>    
+    </div>
+    <div class="quote"> 
+        <div id="author" class="author">  </div>
+        <div id="content" class="content">   </div>
+    </div>
+</body>
+
+</html>
